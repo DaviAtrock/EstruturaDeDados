@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario 2024</title>
+</head>
+<body>
+    <script>
+
+        const meses = [
+    { nome: "Janeiro", dias: 31 },
+    { nome: "Fevereiro", dias: 28 },
+    { nome: "Março", dias: 31 },
+    { nome: "Abril", dias: 30 },
+    { nome: "Maio", dias: 31 },
+    { nome: "Junho", dias: 30 },
+    { nome: "Julho", dias: 31 },
+    { nome: "Agosto", dias: 31 },
+    { nome: "Setembro", dias: 30 },
+    { nome: "Outubro", dias: 31 },
+    { nome: "Novembro", dias: 30 },
+    { nome: "Dezembro", dias: 31 }
+  ];
+  
+  const calendario = [];
+  
+  for (let i = 0; i < 12; i++) {
+    calendario[i] = [];
+    for (let j = 0; j < meses[i].dias; j++) {
+      calendario[i][j] = j + 1;
+    }
+  }
+  
+  Document.write(calendario);
+  
+    </script>
+</body>
+</html>
